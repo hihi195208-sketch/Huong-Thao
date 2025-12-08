@@ -29,14 +29,7 @@
   display:block;      /* ❗ Sửa từ flex → block */
   overflow-y:auto;    /* ❗ Cho phép kéo xuống */
 }
-    main {
-    max-width: 900px;      /* Giới hạn chiều rộng của nội dung */
-    margin: 0 auto;        /* Căn giữa toàn bộ */
-    position: relative;
-    z-index: 10;
-}
-
-
+  
     /* Ảnh nền được chèn bằng thẻ <img> */
     .background-image-fixed {
     position: absolute;
@@ -52,22 +45,26 @@
     
     
     /* Card giới thiệu (Profile Card) */
-    .card{
-      position:relative;
-      z-index:2; 
-      max-width:var(--max-width);
-      width:100%;
-      background:linear-gradient(135deg, rgba(255,255,255,0.85), rgba(255,255,255,0.65));
-      border-radius:20px;
-      padding:25px;
-      box-shadow:0 15px 40px rgba(180,150,50,0.2);
-      backdrop-filter: blur(var(--glass-blur));
-      border:1px solid rgba(255,255,255,0.4);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      text-align:center;
-    }
+   .card {
+    position:relative;
+    z-index:2; 
+    max-width:var(--max-width);
+    width:100%;
+    background:linear-gradient(135deg, rgba(255,255,255,0.85), rgba(255,255,255,0.65));
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 15px 40px rgba(180,150,50,0.2);
+    backdrop-filter: blur(var(--glass-blur));
+    border:1px solid rgba(255,255,255,0.4);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+
+    /* ⭐ THÊM HAI DÒNG NÀY */
+    margin: 0 auto;       /* giúp nội dung vào giữa */
+}
+
 
     /* Ảnh đại diện */
     .profile-pic-area{
