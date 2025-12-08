@@ -20,27 +20,27 @@
     *{box-sizing:border-box}
 
     body{
-      margin:0;
-      min-height:100vh;
-      font-family:Inter,system-ui,Arial,sans-serif;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:20px;
-      background:var(--pastel-yellow); 
-      position:relative;
-      overflow:hidden;
-    }
+  margin:0;
+  min-height:100vh;
+  font-family:Inter,system-ui,Arial,sans-serif;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  background:var(--pastel-yellow);
+  position:relative;
+}
 
     /* Ảnh nền được chèn bằng thẻ <img> */
     .background-image-fixed {
-        position: absolute;
-        inset: 0;
-        z-index: 0; 
-        width: 100%;
-        height: 100vh;
-        object-fit: cover; 
-        
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;  /* ✔ cho phép trang dài tùy nội dung */
+    object-fit: cover;
+    filter: blur(4px) brightness(0.95);
+    transform: scale(1.05);
+}
         /* ĐỘ MỜ 4px */
         filter: blur(4px) brightness(0.95);
         transform: scale(1.05);
